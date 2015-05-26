@@ -48,6 +48,17 @@ class CalculatorDemoTests: XCTestCase {
     XCTAssert(result == "0", "One minus one should equal zero.")
   }
 
+  func testEnumeratedInput() {
+    calc.input(.One)
+    calc.input(.Plus)
+    calc.input(.One)
+    calc.input(.Equals)
+
+    let result = calc.displayValue()
+
+    XCTAssert(result == "2", "One plus one should equal two.")
+  }
+
   // Delete
 
   // Multiplication
