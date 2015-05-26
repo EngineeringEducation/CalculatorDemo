@@ -10,27 +10,45 @@ import UIKit
 import XCTest
 
 class CalculatorDemoTests: XCTestCase {
-    
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
+
+  var calc : Calculator!
+
+  override func setUp() {
+    super.setUp()
+    // Put setup code here. This method is called before the invocation of each test method in the class.
+
+    calc = Calculator()
+  }
+
+  override func tearDown() {
+    // Put teardown code here. This method is called after the invocation of each test method in the class.
+    super.tearDown()
+
+    calc = nil
+  }
+
+  func testOnePlusOne() {
+
+    calc.input("1")
+    calc.input("+")
+    calc.input("1")
+    calc.input("=")
+
+    let result = calc.displayValue()
+
+    XCTAssert(result == "2", "One plus one should equal two.")
+  }
+
+  func testOneMinusOne() {
+
+    calc.input("1")
+    calc.input("-")
+    calc.input("1")
+    calc.input("=")
+
+    let result = calc.displayValue()
+
+    XCTAssert(result == "0", "One minus one should equal zero.")
+  }
+
 }
