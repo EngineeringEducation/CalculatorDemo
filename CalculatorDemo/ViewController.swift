@@ -10,16 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+  lazy var calculator = Calculator()
+
+  @IBOutlet weak var displayLabel: UILabel!
+
+  @IBAction func didPressButton(sender: UIButton) {
+    self.calculator.input(sender.titleLabel?.text)
+    self.updateDisplay()
   }
 
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
+  func updateDisplay() {
+    self.displayLabel.text = self.calculator.displayValue()
   }
-
-
 }
 
