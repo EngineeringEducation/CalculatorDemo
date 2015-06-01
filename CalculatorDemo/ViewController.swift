@@ -15,7 +15,8 @@ class ViewController: UIViewController {
   @IBOutlet weak var displayLabel: UILabel!
 
   @IBAction func didPressButton(sender: UIButton) {
-    self.calculator.input(sender.titleLabel?.text)
+    let input = CalculatorInput(rawValue: sender.tag)!
+    self.calculator.input(input)
     self.updateDisplay()
   }
 

@@ -86,9 +86,9 @@
 			children = (
 				B1A79BB41B14D414005C4985 /* AppDelegate.swift */,
 				B1A79BB61B14D414005C4985 /* ViewController.swift */,
-				B1A79BD81B14ECAE005C4985 /* CalculatorInput.swift */,
 				B1A79BB81B14D414005C4985 /* Main.storyboard */,
 				B1A79BD51B14D4B3005C4985 /* Calculator.h */,
+				B1A79BD81B14ECAE005C4985 /* CalculatorInput.swift */,
 				B1A79BD61B14D4B3005C4985 /* Calculator.m */,
 				B1A79BBB1B14D414005C4985 /* Images.xcassets */,
 				B1A79BBD1B14D414005C4985 /* LaunchScreen.xib */,

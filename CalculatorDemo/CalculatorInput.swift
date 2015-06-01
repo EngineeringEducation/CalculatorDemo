@@ -8,8 +8,25 @@
 
 import Foundation
 
-enum CalculatorInput {
-  case One, Two, Three, Four, Five, Six, Seven, Eight, Nine, Zero, Point, Equals, Plus, Minus, Multiply, Divide, Clear, Delete
+enum CalculatorInput: Int {
+  case One = 1,
+  Two = 2,
+  Three = 3,
+  Four = 4,
+  Five = 5,
+  Six = 6,
+  Seven = 7,
+  Eight = 8,
+  Nine = 9,
+  Zero = 0,
+  Point = 10,
+  Equals = 11,
+  Plus = 12,
+  Minus = 13,
+  Multiply = 14,
+  Divide = 15,
+  Clear = 16,
+  Delete = 17
 }
 
 extension Calculator {
