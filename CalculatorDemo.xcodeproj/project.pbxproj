@@ -16,6 +16,10 @@
 		B1A79BD71B14D4B3005C4985 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = B1A79BD61B14D4B3005C4985 /* Calculator.m */; };
 		B1A79BD91B14ECAE005C4985 /* CalculatorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A79BD81B14ECAE005C4985 /* CalculatorInput.swift */; };
 		B1A79BDB1B14F1AE005C4985 /* CalculatorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A79BD81B14ECAE005C4985 /* CalculatorInput.swift */; };
+		B1A79BDD1B1CD861005C4985 /* ScientificCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A79BDC1B1CD861005C4985 /* ScientificCalculator.swift */; };
+		B1A79BDF1B1CD901005C4985 /* ScientificCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A79BDE1B1CD901005C4985 /* ScientificCalculatorTests.swift */; };
+		B1A79BE01B1CD9CD005C4985 /* ScientificCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A79BDC1B1CD861005C4985 /* ScientificCalculator.swift */; };
+		B1A79BE21B1F67BA005C4985 /* Calculator+Testing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A79BE11B1F67BA005C4985 /* Calculator+Testing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +47,9 @@
 		B1A79BD51B14D4B3005C4985 /* Calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
 		B1A79BD61B14D4B3005C4985 /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
 		B1A79BD81B14ECAE005C4985 /* CalculatorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorInput.swift; sourceTree = "<group>"; };
+		B1A79BDC1B1CD861005C4985 /* ScientificCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScientificCalculator.swift; sourceTree = "<group>"; };
+		B1A79BDE1B1CD901005C4985 /* ScientificCalculatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScientificCalculatorTests.swift; sourceTree = "<group>"; };
+		B1A79BE11B1F67BA005C4985 /* Calculator+Testing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Calculator+Testing.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,8 +95,9 @@
 				B1A79BB61B14D414005C4985 /* ViewController.swift */,
 				B1A79BB81B14D414005C4985 /* Main.storyboard */,
 				B1A79BD51B14D4B3005C4985 /* Calculator.h */,
-				B1A79BD81B14ECAE005C4985 /* CalculatorInput.swift */,
 				B1A79BD61B14D4B3005C4985 /* Calculator.m */,
+				B1A79BD81B14ECAE005C4985 /* CalculatorInput.swift */,
+				B1A79BDC1B1CD861005C4985 /* ScientificCalculator.swift */,
 				B1A79BBB1B14D414005C4985 /* Images.xcassets */,
 				B1A79BBD1B14D414005C4985 /* LaunchScreen.xib */,
 				B1A79BB21B14D414005C4985 /* Supporting Files */,
@@ -109,7 +117,9 @@
 		B1A79BC71B14D414005C4985 /* CalculatorDemoTests */ = {
 			isa = PBXGroup;
 			children = (
+				B1A79BE11B1F67BA005C4985 /* Calculator+Testing.swift */,
 				B1A79BCA1B14D414005C4985 /* CalculatorDemoTests.swift */,
+				B1A79BDE1B1CD901005C4985 /* ScientificCalculatorTests.swift */,
 				B1A79BC81B14D414005C4985 /* Supporting Files */,
 			);
 			path = CalculatorDemoTests;
@@ -225,6 +235,7 @@
 			files = (
 				B1A79BD71B14D4B3005C4985 /* Calculator.m in Sources */,
 				B1A79BB71B14D414005C4985 /* ViewController.swift in Sources */,
+				B1A79BDD1B1CD861005C4985 /* ScientificCalculator.swift in Sources */,
 				B1A79BD91B14ECAE005C4985 /* CalculatorInput.swift in Sources */,
 				B1A79BB51B14D414005C4985 /* AppDelegate.swift in Sources */,
 			);
@@ -234,8 +245,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1A79BE01B1CD9CD005C4985 /* ScientificCalculator.swift in Sources */,
+				B1A79BE21B1F67BA005C4985 /* Calculator+Testing.swift in Sources */,
 				B1A79BDB1B14F1AE005C4985 /* CalculatorInput.swift in Sources */,
 				B1A79BCB1B14D414005C4985 /* CalculatorDemoTests.swift in Sources */,
+				B1A79BDF1B1CD901005C4985 /* ScientificCalculatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

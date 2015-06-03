@@ -27,23 +27,16 @@ class CalculatorDemoTests: XCTestCase {
     calc = nil
   }
 
-  func valueForSequenceOfInputs(inputs : [String]) -> String {
-    for input in inputs {
-      calc.input(input)
-    }
-    return calc.displayValue()
-  }
-
   func testOnePlusOne() {
 
-    let result = valueForSequenceOfInputs(["1", "+", "1", "="])
+    let result = calc.valueForSequenceOfInputs(["1", "+", "1", "="])
 
     XCTAssert(result == "2", "One plus one should equal two.")
   }
 
   func testOneMinusOne() {
 
-    let result = valueForSequenceOfInputs(["1", "-", "1", "="])
+    let result = calc.valueForSequenceOfInputs(["1", "-", "1", "="])
 
     XCTAssert(result == "0", "One minus one should equal zero.")
   }
