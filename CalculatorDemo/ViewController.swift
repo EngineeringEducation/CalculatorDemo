@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-  lazy var calculator = Calculator()
+  lazy var calculator = ScientificCalculator()
 
   @IBOutlet weak var displayLabel: UILabel!
 
@@ -23,5 +23,15 @@ class ViewController: UIViewController {
   func updateDisplay() {
     self.displayLabel.text = self.calculator.displayValue()
   }
+
+  @IBAction func storeToMemory(sender: UIButton) {
+    self.calculator.storeValueToMemory()
+  }
+
+  @IBAction func restoreFromMemory(sender: UIButton) {
+    self.calculator.retrieveValueFromMemory()
+    self.updateDisplay()
+  }
+
 }
 

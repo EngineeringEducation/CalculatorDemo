@@ -184,6 +184,24 @@
                                     <action selector="didPressButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="wya-i8-OuL"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxT-Iz-G0X">
+                                <rect key="frame" x="81" y="384" width="30" height="30"/>
+                                <state key="normal" title="MS">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="storeToMemory:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="KHp-fY-1cS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O0X-FI-14d">
+                                <rect key="frame" x="145" y="384" width="30" height="30"/>
+                                <state key="normal" title="MR">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="restoreFromMemory:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="eMX-sF-DVY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
